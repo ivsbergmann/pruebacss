@@ -1,72 +1,91 @@
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 1rem;
+  font-family: $raleway;
+  color: $white;
+  background: $raising-black;
+
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3rem 1rem;
-    font-family: $raleway;
-    color: $white;
-    background: $raising-black;
-  
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  &__item {
+    font-size: 1rem;
+
+    a {
+      text-decoration: none;
+      color: $white;
+
+      &:hover {
+        color: $gray;
+      }
+    }
+
+  }
+
+  &__legal {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 3rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
     &__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-around;
+      -webkit-box-pack: unset;
+          -ms-flex-pack: unset;
+              justify-content: unset;
       list-style: none;
       width: 100%;
       padding-left: 0;
     }
-  
+
     &__item {
-      font-size: 1rem;
-  
+      font-size: .9rem;
+
       a {
+        margin-right: 3.3rem;
         text-decoration: none;
+        font-size: 1rem;
         color: $white;
-  
+
         &:hover {
           color: $gray;
         }
       }
-  
+
     }
-  
+
     &__legal {
-      width: 100%;
-      text-align: center;
+      text-align: right;
     }
   }
-  
-  @media (min-width: 768px) {
-    .footer {
-      padding: 3rem 2rem;
-      flex-direction: row;
-  
-      &__list {
-        display: flex;
-        justify-content: unset;
-        list-style: none;
-        width: 100%;
-        padding-left: 0;
-      }
-  
-      &__item {
-        font-size: .9rem;
-  
-        a {
-          margin-right: 3.3rem;
-          text-decoration: none;
-          font-size: 1rem;
-          color: $white;
-  
-          &:hover {
-            color: $gray;
-          }
-        }
-  
-      }
-  
-      &__legal {
-        text-align: right;
-      }
-    }
-  }
+}

@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!--Mi estilo-->
-    <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <script src="./assets/js/function.js"></script>
 </head>
 
 <body>
@@ -18,8 +19,8 @@
       <div class="navigation__logo"></div>
 
       <div class="collapse col-xs-12">
-       <span><i class="fas fa-bars"></i></span>
-        <div class="navigation">
+        <span><i class="fas fa-bars" onclick="navbar()"></i></span>
+        <div class="navigation__container" id="navbar">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="#">Acerca de</a>
@@ -40,6 +41,7 @@
             </li>
           </ul>
         </div>
+      </div>
     </nav>
   </header>
   <main class="main__group">

@@ -1,9 +1,18 @@
-@keyframes mostrar {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+@-webkit-keyframes mostrar {
+  0% {
+    opacity: 0;
   }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mostrar {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

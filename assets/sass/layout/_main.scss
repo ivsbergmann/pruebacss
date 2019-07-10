@@ -1,14 +1,13 @@
 .main {
-    &__group {
-      position: relative;
-    }
+  &__group {
+    position: relative;
   }
-  
-  .mountain {
-    padding: 3rem 2rem 5rem 2rem;
-  
-    p {
-      line-height: 25px;
-    }
+}
+
+.mountain {
+  padding: 3rem 2rem 5rem 2rem;
+
+  p {
+    line-height: 25px;
   }
-  
+}

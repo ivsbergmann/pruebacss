@@ -43,21 +43,13 @@
   padding-right: 2rem;
   padding-top: 1.7rem;
 
-  label {
+  span {
     display: block;
     font-size: 1.6rem;
   }
 }
 
-/*#menu {
-    display: none;
-  }
-  
-  input:checked~.navigation__container {
-    max-height: 100%;
-  }*/
-
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .navigation {
     &__logo {
       top: 2em;
@@ -65,7 +57,11 @@
     }
 
     &__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       max-height: 100%;
       padding: 1em 2rem 1em 3rem;
@@ -73,6 +69,8 @@
     }
 
     &__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin: inherit;
       padding: inherit;
@@ -86,10 +84,25 @@
       }
     }
   }
+  .collapse {
+    span {
+      display: none;
+    }
+  }
 }
-
-.collapse {
-  label {
+@media (max-width: 992px) {
+  .navigation__container {
     display: none;
+  }
+  .responsive {
+    position: relative;
+    display: block;
+    max-height: min-content;
+    overflow: inherit;
+  }
+  .collapse {
+    span {
+      display: block;
+    }
   }
 }
