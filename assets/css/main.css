@@ -295,17 +295,17 @@ a {
     text-align: right;
   }
 }
-.btn {
+.button {
   background-color: #2ab7ca;
   border: none;
   font-family: "Raleway", sans-serif;
   color: white;
   font-weight: 700;
 }
-.btn_sm {
+.button--sm {
   padding: 0.3rem 1.5rem;
 }
-.btn_lg {
+.button--lg {
   width: 100%;
   padding: 0.5rem 1rem;
 }
