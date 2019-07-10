@@ -1,0 +1,16 @@
+.btn {
+  background-color: $bali-blue;
+  border: none;
+  font-family: $raleway;
+  color: white;
+  font-weight: 700;
+
+  &_sm {
+    padding: 0.3rem 1.5rem;
+  }
+
+  &_lg {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+}

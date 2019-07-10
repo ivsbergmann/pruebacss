@@ -1,0 +1,26 @@
+body {
+  font-size: $medium;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $raleway;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+p,
+a {
+  font-family: $open-sans;
+  font-weight: 400;
+  color: $nickel;
+  line-height: 25px;
+}

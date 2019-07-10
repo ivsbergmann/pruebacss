@@ -1,0 +1,95 @@
+.navigation {
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    top: 1rem;
+    left: 2.5em;
+    width: 50px;
+    height: 50px;
+    background: url("../images/Logo.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    a {
+      display: block;
+      text-align: left;
+      padding: 0.5em;
+      font-family: $raleway;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #000;
+      text-decoration: none;
+
+      &:hover {
+        color: $nickel;
+      }
+    }
+  }
+}
+
+.collapse {
+  text-align: right;
+  padding-right: 2rem;
+  padding-top: 1.7rem;
+
+  label {
+    display: block;
+    font-size: 1.6rem;
+  }
+}
+
+/*#menu {
+    display: none;
+  }
+  
+  input:checked~.navigation__container {
+    max-height: 100%;
+  }*/
+
+@media only screen and (min-width: 992px) {
+  .navigation {
+    &__logo {
+      top: 2em;
+      left: 3em;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      max-height: 100%;
+      padding: 1em 2rem 1em 3rem;
+      overflow: visible;
+    }
+
+    &__list {
+      display: flex;
+      margin: inherit;
+      padding: inherit;
+    }
+
+    &__item {
+      a {
+        padding: 0.5em 1em;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.collapse {
+  label {
+    display: none;
+  }
+}

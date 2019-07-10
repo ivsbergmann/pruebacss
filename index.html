@@ -9,17 +9,16 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!--Mi estilo-->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
   <header class="header">
-    <nav class="navbar">
+    <nav class="navigation">
       <div class="navigation__logo"></div>
 
       <div class="collapse col-xs-12">
-        <input type="checkbox" id="menu">
-        <label for="menu"><i class="fas fa-bars"></i></label>
+       <span><i class="fas fa-bars"></i></span>
         <div class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -37,20 +36,20 @@
               <a href="#">Iniciar Sesión</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="button button_sm">Regístrate</a>
+              <a href="#" class="btn btn_sm">Regístrate</a>
             </li>
           </ul>
         </div>
     </nav>
   </header>
-  <main class="main__container">
+  <main class="main__group">
     <object type="image/svg+xml" data="./assets/images/bg-hero.svg" class="bg-hero">
-      <img src="./assets/images/bg-hero.png" alt="Persona escalando una montaña">
+      <img src="./assets/images/bg-hero.png" alt="Persona escalando">
     </object>
-    <section class="hero">
+    <section class="mountain">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <h1 class="hero__title">Haz Trekking sin Parar</h1>
+          <h1 class="mountain__title">Haz Trekking sin Parar</h1>
           <p>
             Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos
             podrás definir la mejor ruta a tomar con tus compañeros de expedición.
@@ -58,14 +57,14 @@
         </div>
       </div>
     </section>
-    <section class="features">
+    <section class="barras">
       <h2>Características</h2>
       <div class="row">
-        <div class="features__barchart col-xs-12 col-md-6">
+        <div class="barras__img col-xs-12 col-md-6">
         </div>
-        <div class="features__info col-xs-12 col-md-6">
-          <h3 class="features__title">Estadísticas de tu progreso</h3>
-          <p class="features__text">
+        <div class="barras__info col-xs-12 col-md-6">
+          <h3 class="barras__title">Estadísticas de tu progreso</h3>
+          <p class="barras__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde sunt magni
             delectus, et omnis quasi
             laudantium similique sit harum consectetur nulla veniam. Placeat qui consectetur eveniet officiis, tenetur
@@ -74,30 +73,30 @@
         </div>
       </div>
     </section>
-    <section class="prices">
-      <object type="image/svg+xml" data="./assets/images/bg-price.svg" class="bg-prices">
-        <img src="./assets/images/bg-price.png" alt="Dibujo de una montaña">
+    <section class="precios">
+      <object type="image/svg+xml" data="./assets/images/bg-price.svg" class="bg-precios">
+        <img src="./assets/images/bg-price.png" alt="montaña">
       </object>
-      <h2 class="prices__title">Precios</h2>
+      <h2 class="precios__title">Precios</h2>
       <div class="row">
         <div class="card col-xs-12 col-sm-6">
           <h3 class="card__title">Trekk-in Free</h3>
-          <h4 class="card__price">$ 0 / mes</h4>
-          <hr class="card__line">
+          <h4 class="card__precio">$ 0 /mes</h4>
+          <hr class="card__deco">
           <ul class="card__list">
             <li class="card__item">Ver mapa creado por usuarios</li>
             <li class="card__item">Conectar con otros usuarios</li>
           </ul>
           <hr class="card__line">
-          <div class="card__button">
-            <button class="button button_large">
+          <div class="card__btn">
+            <button class="btn btn_lg">
               Obtén Free
             </button>
           </div>
         </div>
         <div class="card col-xs-12 col-sm-6">
-          <h3 class="card__title">Trekk-in Free</h3>
-          <h4 class="card__price">$ 3500 / mes</h4>
+          <h3 class="card__title">Trekk-in Premium</h3>
+          <h4 class="card__precio">$ 3500 /mes</h4>
           <hr>
           <ul class="card__list">
             <li class="card__item">Ver mapa creado por usuarios</li>
@@ -106,9 +105,9 @@
             <li class="card__item">Mapas Offline</li>
             <li class="card__item">Integración con otras aplicaciones</li>
           </ul>
-          <hr class="card__line">
-          <div class="card__button">
-            <button class="button button_large">
+          <hr class="card__deco">
+          <div class="card__btn">
+            <button class="btn btn_lg">
               Obtén Premium
             </button>
           </div>
@@ -125,11 +124,11 @@
         <a href="#">Cookies</a>
       </li>
       <li class="footer__item">
-        <a href="#">Sobre Anuncios</a>
+        <a href="#">Sobre anuncios</a>
       </li>
     </ul>
-    <div class="footer__disclaimer">
-      <small>&copy; 2018 Treek-in SPA.</small>
+    <div class="footer__legal">
+      <span>&copy; 2018 Treek-in SPA.</span>
     </div>
   </footer>
 </body>
